@@ -1,0 +1,34 @@
+### Recuperar todos los usuarios
+GET http://localhost:3000/users
+
+### Recuperar un usuario concreto
+GET http://localhost:3000/user/2GNtwL9jkv8rQuRZIvXe
+
+### Recuperar proyecto concreto de usuario concreto
+GET http://localhost:3000/user/2GNtwL9jkv8rQuRZIvXe/proyects/CUfdgRYqZ8IPFB07KdvT
+
+### Recuperar un libro
+GET http://localhost:3000/books/1
+
+### Crear un libro
+POST http://localhost:3000/new-project
+Content-Type: application/json
+
+ {
+    "description": "Senior Dev",
+    "email": "senior@gmail.com",
+    "name": "Raul Gimenez Murga",
+    "phone": "606511406",
+    "photo": "https://picsum.photos/id/236/200/300"
+}
+
+### Actualizar un elemento de un libro.
+PUT http://localhost:4321/books/im82p5udXJtMAUE95gTK
+Content-Type: application/json
+
+{
+    "title":"El señor de los anillos: La Comunidad del Anillo"
+}
+
+### Borrar un libro
+DELETE http://localhost:4321/books/1
